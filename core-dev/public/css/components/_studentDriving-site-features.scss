@@ -1,0 +1,30 @@
+.features-content{
+  margin-bottom:30px;
+}
+.features-content .image-icon {
+  height: 160px;
+  margin-bottom: 20px;
+  transition:.5s;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -ms-transition:.5s;
+  -o-transition:.5s;
+}
+.features-content h5{
+  font-size:15px;
+  text-transform:uppercase;
+  font-weight:600;
+  transition:.5s;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -ms-transition:.5s;
+  -o-transition:.5s;
+}
+.features-content:hover i {
+  background:#414042;
+  color:fff;
+}
+
+.features-content:hover h5{
+  color: #ff5151;
+}

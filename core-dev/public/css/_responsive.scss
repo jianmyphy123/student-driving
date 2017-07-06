@@ -1,0 +1,117 @@
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 15px;
+  }
+  .home-content h1 {
+    font-size:32px;
+  }
+  .video-content h1 {
+    font-size: 38px;
+  }
+
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+  .img-overlay {
+    height: 83%;
+  }
+  .navbar-header{
+    margin-bottom:20px;
+  }
+  .nav>li>a {
+
+    padding: 10px 12px;
+  }
+  .navbar-brand img {
+    height: 45px;
+  }
+
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 80%;
+  }
+  .video-content h1 {
+    font-size: 26px;
+  }
+  .home-content h1 {
+    font-size: 33px;
+  }
+  .img-overlay {
+    height: 91%;
+  }
+  .navbar-default .navbar-toggle {
+    border:0;
+    background: #ff5151;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  .navbar-default .navbar-toggle:hover{
+    border:0;
+    background:#d33f3f;
+  }
+
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    border:0;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:0;
+  }
+}
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  html {
+    font-size: 65%;
+  }
+
+  .home-content h1 {
+    font-size:20px;
+  }
+  .heading-content h3 {
+    font-size: 23px;
+  }
+  .heading-content h5 {
+    font-size: 12px;
+  }
+  .btn-default {
+    margin-bottom:20px;
+  }
+  .img-overlay {
+    height: 87%;
+  }
+  .video-content h1 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 60.5%;
+  }
+  .navbar {
+    height: 75px;
+  }
+  .img-overlay {
+    height: 80%;
+  }
+  .home-content h1 {
+    font-size:19px;
+  }
+  .video-content h1 {
+    font-size: 16px;
+  }
+}
+

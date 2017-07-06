@@ -1,0 +1,87 @@
+extends ../layout
+
+block content
+  section.register
+    .container
+      .row
+        .col-md-12
+          h1.text-center
+           | Register your account
+  section.register-form
+    .container
+      .row
+        .col-md-offset-2.col-md-10
+          h3.reg-details
+            | Your Details
+    .container
+      form.account-form(id='signup-form', method='get', action='/invitation')
+        input(type='hidden', name='_csrf', value=_csrf)
+        .row
+          .col-md-offset-2.col-md-10
+            .form-group
+              .radio.year-req
+                label
+                  input#up_radio(type='radio', name='accountType', value='update')
+                  | Learner
+                label
+                  input#ov_radio(type='radio', name='accountType', value='overwritten')
+                  | Teacher
+        .row
+          .col-md-offset-2.col-md-4
+            .form-group
+              label(for='exampleInputFirstName') First name
+              input#exampleInputFirstName.form-control(type='text')
+          .col-md-offset-1.col-md-4
+            .form-group
+              label(for='exampleInputLastName') Last name
+              input#exampleInputLastName.form-control(type='text')
+        .row
+          .col-md-offset-2.col-md-4
+            .form-group
+              label(for='exampleInputEmail1') Your email address
+              input#exampleInputEmail1.form-control(type='email')
+          .col-md-offset-1.col-md-4
+            .form-group
+              label(for='exampleInputNumber') Contact number
+              input#exampleInputNumber.form-control(type='text')
+        .row
+          .col-md-offset-2.col-md-4
+            .form-group
+              label(for='exampleInputPassword1') Password
+              input#exampleInputPassword1.form-control(type='password')
+        .row
+          .col-md-offset-2.col-md-4
+            .form-group.age
+              label Are you over 21?
+              .radio.year-req
+                label
+                  input#optionsRadios7(type='radio', name='years', value='option3')
+                  | Yes
+                label
+                  input#optionsRadios8(type='radio', name='years', value='option4')
+                  | No
+            .form-group
+              label Provisional held?
+              .radio.year-req
+                label
+                  input#optionsRadios3(type='radio', name='held', value='update')
+                  | Yes
+                label
+                  input#optionsRadios4(type='radio', name='held', value='overwritten')
+                  | No
+          .col-md-offset-1.col-md-4
+            .form-group
+              label Have you had a clean license for 3 years?
+              .radio.year-req
+                label
+                  input#optionsRadios5(type='radio', name='license', value='option5')
+                  | Yes
+                label
+                  input#optionsRadios6(type='radio', name='license', value='option6')
+                  | No
+        .row
+          .col-md-offset-2.col-md-9.send-wrapper.text-center
+            button.btn.btn-primary.btn-lg.cont(type='submit')
+              | Submit
+
+

@@ -1,0 +1,55 @@
+.home{
+  background: url(../images/header-bg.jpg) no-repeat top;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height:700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-content{
+  color:#fff;
+  margin-top: 165px;
+  text-align: center;
+}
+
+.home-content h1{
+  font-size:40px;
+  font-family: 'latolight';
+  line-height: 3em;
+}
+
+.home-content h1 span{
+  font-family: 'latobold';
+  color:#fff;
+}
+
+.home-content h3.subheading{
+  margin: 20px 0 50px;
+}
+
+.home-content p{
+  margin:30px 0;
+}
+
+.home-content .available p a i {
+  font-size: 25px;
+  background: #191c21;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 13px;
+  color: #ff5151;
+  margin: 0 10px;
+  transition:.3s;
+}
+
+.home-content .available p a i:hover {
+  color: #fff;
+}

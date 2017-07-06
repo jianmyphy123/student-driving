@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  // Lesson page style
+  header#home.school
+    .container
+      .row
+        .col-md-12
+          .school-content.sections.text-center
+            h1.lol
+              | Your own driving school
+            h3.subheading All your lesson plans in one place
+  // Sections
+  section.sections-school
+    .container.text-center
+      .heading-content
+        h3 Lesson Programme - Manoeuvres
+  //  Sections
+  section.sections-lesson
+    .container
+      .row.equal
+        .col-md-offset-3.col-md-4.col-sm-6.col-xs-12.school-block
+          .school-content
+            .image-icon.school-icon.text-center
+              img(src='images/ico3.png')
+            h6 Part 1
+            .lesson-block
+              ul.lesson-list
+                li
+                  | 1. Moving off and stopping
+                  span(class='rateYo' data-rating-index="0" data-rating=video[0].rating data-id-for-video=video[0].id)
+                li
+                  | 2. Emerging
+                  span(class='rateYo' data-rating-index="1" data-rating=video[1].rating data-id-for-video=video[1].id)
+                li
+                  | 3. Junctions
+                li
+                  | 4. Meeting traffic
+                li
+                  | 5. Emergency stops
+                li
+                  | 6. Pedestrian crossing
+                li
+                  | 7. Hazard awareness
+
+              .btn-wrapper
+                a(href='/lesson')
+                  button.btn.btn-primary.btn-lg Start Learning
+        .col-md-4.col-sm-6.col-xs-12.school-block
+          .school-content
+            .image-icon.school-icon.text-center
+              img(src='images/ico4.png')
+            h6 Part 2
+            .lesson-block
+              ul.lesson-list
+                li
+                  | 1. Roundabouts
+                li
+                  | 2. Mini-roundabouts
+                li
+                  | 3. Dual carriageways
+                li
+                  | 4. Turning
+
+                li
+                  | 5. Reversing
+                li
+                  | 6. Parking
+                li
+                  | 7. Controlled starts and stops
+                li
+                  | 8. Bends
+              .btn-wrapper
+                a(href='/lesson')
+                  button.btn.btn-primary.btn-lg Start Learning
+  .scroll-top
+    .scrollup
+      i.fa.fa-angle-double-up
+  // Footer

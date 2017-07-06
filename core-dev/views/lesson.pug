@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  section.lesson-video
+    .container
+      .row.inform-wrapper
+        .col-md-6
+          a.lesson-plan(href='/school') < Return to lesson plans
+        .col-md-6
+          .rateYo-slider.pull-right
+            each val, index in video
+              div(class='rateYoLesson' data-rating-index=index data-rating=val.rating data-id-for-video=val.id)
+      .row
+        .col-md-12.slider
+          .lesson-block
+            h3.text-center.lesson-headline
+              | Moving off and stopping
+            video(id='video1' controls)
+              source(src='images/part-1/1_moving_off_changing gear_and_stopping_safely.mp4', type='video/mp4')
+            .play-btn-wrapper(onclick='playPause()')
+              button.play-btn
+                span.glyphicon.glyphicon-play(aria-hidden='true')
+          .lesson-block
+            h3.text-center.lesson-headline
+              | Emerging
+            video(id='video2' controls)
+              source(src='images/part-1/2_emerging_from_open_junctions_turning_left.mp4', type='video/mp4')
+            .play-btn-wrapper(onclick='playPause()')
+              button.play-btn
+                span.glyphicon.glyphicon-play(aria-hidden='true')
+          .lesson-block
+            h3.text-center.lesson-headline
+              | Junctions
+            video(id='video3' controls)
+              source(src='images/part-1/3_approaching_junction_turning_left.mp4', type='video/mp4')
+            .play-btn-wrapper(onclick='playPause()')
+              button.play-btn
+                span.glyphicon.glyphicon-play(aria-hidden='true')
+          .lesson-block
+            h3.text-center.lesson-headline
+              | Meeting traffic
+            video(id='video4' controls)
+              source(src='images/part-1/4_meeting_traffic.mp4', type='video/mp4')
+            .play-btn-wrapper(onclick='playPause()')
+              button.play-btn
+                span.glyphicon.glyphicon-play(aria-hidden='true')
+      .row
+        .col-md-1.text-center
+          p.lesson-sub-head
+            | 1. Moving off and stopping
+        .col-md-1.text-center
+          p.lesson-sub-head
+            | 2. Emerging
+        .col-md-1.text-center
+          p.lesson-sub-head
+            | 3. Junctions
+        .col-md-1.text-center
+          p.lesson-sub-head
+            | 4. Meeting traffic
+
+      .row.btn-row.text-center
+        a(href='#')
+          button.btn.btn-primary.btn-lg Request a Demonstration
+

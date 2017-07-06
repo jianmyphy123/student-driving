@@ -1,0 +1,22 @@
+{
+  "0": {
+    "id": "video1",
+    "rating": 1.1,
+    "user_count": 9
+  },
+  "1": {
+    "id": "video2",
+    "rating": 2.5,
+    "user_count": 4
+  },
+  "2": {
+    "id": "video3",
+    "rating": 3,
+    "user_count": 3
+  },
+  "3": {
+    "id": "video4",
+    "rating": 4,
+    "user_count": 3
+  }
+}

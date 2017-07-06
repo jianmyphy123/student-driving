@@ -1,0 +1,61 @@
+.sections-lesson {
+  padding-bottom: 150px;
+}
+
+.school {
+  background: url(../images/school-header-bg.jpg) no-repeat top;
+  //background-size: cover;
+  //-moz-background-size: cover;
+  //-webkit-background-size: cover;
+  //-o-background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height:440px;
+  width: 100%;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.equal {
+  display: flex;
+  flex-direction:row;
+}
+
+.school-block {
+  display: flex;
+  flex-direction:column;
+  position: relative;
+}
+
+.btn-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+
+.school-content {
+  color:#fff;
+  padding-bottom: 0;
+  h6 {
+    color: #414141;
+    font-size: 24px;
+  }
+}
+
+.school-icon {
+  margin-bottom: 30px;
+}
+
+.lesson-block {
+  padding-bottom: 80px;
+}
+
+.lesson-list {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    display: flex;
+    color: #3f3f3f;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

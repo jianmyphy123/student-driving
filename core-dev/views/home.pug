@@ -1,0 +1,128 @@
+extends layout
+
+block content
+  // Home page style
+  header#home.home
+    .container
+      .row
+        .col-md-12
+          .home-content.sections
+            h1.lol
+              | Learn to drive for
+              span FREE
+            h3.subheading What if your friend was your driving instructor?
+            a(href='#versus')
+              button.btn.btn-primary.btn-lg Get Started
+  // Sections
+  section#versus.sections
+    .container.text-center
+      .heading-content
+        h3 Who can teach you to drive?
+        h5 Anyone 21+ with a clean drivers license for 3 years and over.
+      .row
+        .col-md-6
+          .versus-item
+            .versus
+              img(src='images/friendsandfamily.png', alt='')
+            h6 Family and Friends
+            p Free lessons, no structure.
+            p
+              | StudentDriving aims to provide access to structured education to maximise your learning experience with family and friends.
+        .col-md-6
+          .versus-item
+            .versus
+              img(src='images/drivinginstructor.png', alt='')
+            h6 Driving Instructor
+            p Average £24 p/h at 40 hours.
+            p
+              | StudentDriving provides education as designed by driving instructors to allow you to save money and also improve your road safety regardless who teaches you.
+      .row
+        .col-md-12
+          h5.tagline
+            | Help provide your friend/family the tools required to teach you.
+          .pad20
+            a(target='_blank', href='/signup')
+              button.btn.btn-primary.btn-lg Register Now
+    // /container
+  // Sections
+  section#video.video
+    .container-fluid
+      .row
+        .video-wrapper
+          h1.video-headline Register & Receive FREE Interactive
+            br
+            | Lessons
+          .overlay
+          video(src='images/learning_to_drive_intro.mp4', poster='images/video.jpg')
+      // /container
+  // Sections
+  section#features.sections.lightbg
+    .container.text-center
+      .heading-content
+        h3 How it works
+      .row
+        .col-md-3.col-sm-6.col-xs-12
+          .features-content
+            .image-icon
+              img(src='images/ico1.png')
+            h5 Register
+            p
+              | Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
+        .col-md-3.col-sm-6.col-xs-12
+          .features-content
+            .image-icon
+              img(src='images/ico2.png')
+            h5 Find a friend
+            p
+              | Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
+        .col-md-3.col-sm-6.col-xs-12
+          .features-content
+            .image-icon
+              img(src='images/ico3.png')
+            h5 Receive education
+            p
+              | Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
+        .col-md-3.col-sm-6.col-xs-12
+          .features-content
+            .image-icon
+              img(src='images/ico4.png')
+            h5 Start driving
+            p
+              | Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.
+    // /container
+  // Sections
+  section#frequentlyasked.sections
+    .container.text-center
+      .heading-content
+        h3 FAQ
+      .row
+        .col-md-12.col-sm-12.col-xs-12
+          #faq
+            a.faqtoggle(name='one')
+              .faqicon
+                i.question.fa.fa-plus
+              .faqtitle
+                h4 Why do you need this education?
+            p.one.hidea.col-md-offset-1
+              | Road safety is one of the biggest challenges facing road users. Learning to drive safely is an expensive but necessary part of life. Learning to drive for free with family or friends could save this cost, however without the right guidance you could be endangering all passengers in the vehicle.
+              br
+              br
+              | We Provide a comprehensive ADI lesson programme, detailing the various manoeuvres a driving instructor would take you through when learning to drive and preparing for your test.
+            a.faqtoggle(name='two')
+              .faqicon.col-md-1
+                i.question.fa.fa-plus
+              .faqtitle.col-md-11
+                h4 Why not use an instructor?
+            p.two.hidea.col-md-offset-1
+              | Driving Instructors are great and have huge wealth's of experience in training new drivers. However with a average of 40 hours practice time at £24 needed before booking your test, this is usually a costly experience.
+              br
+              br
+              | Student Driving aims to provide you access to the tools and lesson structure a driving instructor would use, in order for you to not only learn safely, but also accurately whilst saving money in the process.
+              br
+              br
+              | Road safety being our core principle, we believe access to these tools should be made accessible to all who want to go through the process of  learning to drive, even those who typically struggle with the finances needed to gain this life skill.
+    // /container
+  .scroll-top
+    .scrollup
+      i.fa.fa-angle-double-up
+  // Footer

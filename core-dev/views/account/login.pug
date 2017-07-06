@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+  section.register.login
+    .container
+      .row
+        .col-md-12
+          h1.text-center
+            | Login to your account
+    .container
+      .row
+        .col-md-offset-4.col-md-4
+          form(id='signup-form', method='get', action='/school')
+            input(type='hidden', name='_csrf', value=_csrf)
+            .form-group
+              label(for='email') Email
+              input.form-control(type='email', name='email', id='email', placeholder='Email', autofocus, required)
+            .form-group
+              label.control-label(for='password') Password
+              input.form-control(type='password', name='password', id='password', placeholder='Password', required)
+            .form-group.text-center
+                button.btn.btn-primary(type='submit') Login
+            .form-group.text-center
+                a.btn.btn-link(href='/forgot') Forgot your password?
+            .form-group
+                a.btn.btn-block.btn-facebook.btn-social(href='/auth/facebook')
+                  | Sign in with Facebook
+                a.btn.btn-block.btn-twitter.btn-social(href='/auth/twitter')
+                  | Sign in with Twitter
+                a.btn.btn-block.btn-linkedin.btn-social(href='/auth/linkedin')
+                  | Sign in with LinkedIn
